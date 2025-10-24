@@ -29,7 +29,7 @@ class LocationParserUtil {
                     Keys.ARG_HEADING to location.bearing,
                     Keys.ARG_TIME to location.time.toDouble(),
                     Keys.ARG_PROVIDER to location.provider,
-            )
+            ) as HashMap<Any, Any>
         }
 
         fun getLocationMapFromLocation(location: LocationResult?): HashMap<Any, Any>? {
